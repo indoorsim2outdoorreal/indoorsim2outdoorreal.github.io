@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IndoorSim2OutdoorReal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts + Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/academicons.min.css"/>
+<!-- CSS --> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<br><br><br>
+<body>
+<!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+                <div class="row">
+                    <center>
+                    <p class="title">IndoorSim-to-OutdoorReal: Learning to Navigate Outdoors without any Outdoor Experience</p>
+                    </center>
+                </div>
+                <br>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+                <center>
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                      <source src="vids/supp_v5.mp4" type="video/mp4"></source>
+                    </video>
+                </center>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+                <p class="descrip" style='text-align:center'>All videos shown are of autonomous navigation runs with Spot using a policy trained solely in simulated indoor environments. </p>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <p class="descrip_large" style='text-align:center'><b>Short-Range Indoor Simulation Navigation</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <p class="descrip" style='text-align:center'>We train navigation policies for Spot entirely in simulated indoor environments using short-range trajectories (~8m). </p>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+            <p class="descrip_med" style='text-align:center'><b>Episode #1</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/sim/ep1.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+            <p class="descrip_med" style='text-align:center'><b>Episode #2</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/sim/ep2.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="row">
+            <p class="descrip_large" style='text-align:center'><b>Long-Range Outdoor Real-World Navigation</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <p class="descrip" style='text-align:center'>We zero-shot transfer the policy trained in simulation to the real-world outdoors.</p>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <p class="descrip_med" style='text-align:center'><b>Route #1</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Satellite Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route1_satellite.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Context Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route1_context.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Overlay Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route1_overlay.png">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>Context-Map Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route1_context.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 65.19 m</p> 
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>No-Context Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route1_nocontext.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 16.65 m</p> 
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <p class="descrip_med" style='text-align:center'><b>Route #2</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Satellite Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route2_satellite.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Context Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route2_context.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Overlay Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route2_overlay.png">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>Context-Map Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route2_context.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 111.87 m</p> 
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>No-Context Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route2_nocontext.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 11.46 m</p> 
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <p class="descrip_med" style='text-align:center'><b>Route #3</b></p>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Satellite Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route3_satellite.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Context Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route3_context.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="descrip" style='text-align:center'>Overlay Map</p> 
+                            <center>
+                                <img class="block" src="imgs/route3_overlay.png">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>Context-Map Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route3_context.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 130.09 m</p> 
+                </div>
+                <div class="col-xs-5">
+                    <p class="descrip" style='text-align:center'>No-Context Policy</p> 
+                    <video playsinline autoplay muted loop controls style="width: 100%" class="webby">
+                    <source src="vids/real_world/route3_nocontext.mp4" type="video/mp4"></source>
+                    </video>
+                    <p class="descrip" style='text-align:center'>Total Distance Travelled: 5.11 m</p> 
+                </div>
+                <div class="col-xs-1">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <br><br><br>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+    
+</html>                                     
