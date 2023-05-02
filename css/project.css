@@ -9,7 +9,7 @@
 
 .title{
   color:black; 
-  font-size:40px;
+  font-size:30px;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-weight: bold;
@@ -23,13 +23,6 @@
   text-decoration: none;
 }
 
-.caption{
-  color:black; 
-  font-size:14px;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-}
-
 .descrip{
   color:black; 
   font-size:16px;
@@ -37,17 +30,25 @@
   text-decoration: none;
 }
 
-.descrip_med{
+.descrip_large{
   color:black; 
-  font-size:20px;
+  font-size:25px;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
 
-.descrip_large{
+.descrip_med{
   color:black; 
-  font-size:25px;
+  font-size:21px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.descrip_sm{
+  color:black; 
+  font-size:18px;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-weight: bold;
